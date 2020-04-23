@@ -12,5 +12,6 @@ public class MyServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws javax.servlet.ServletException, IOException {
         request.getRequestDispatcher("/hello.jsp").forward(request, response);
+        System.out.println("修改了");
     }
 }
